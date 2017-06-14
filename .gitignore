@@ -2,15 +2,10 @@
 cache/
 logs/*
 !logs/.empty
-composer.lock
-composer.phar
-composer.json
-phpunit.xml
 
 cache/
 logs/*
 .idea/*
 
-cronjob_pulling.sh
-cronjob_pushing.sh
+
 
