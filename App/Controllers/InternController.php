@@ -34,6 +34,35 @@ class InternController extends Controller
             ));
         
     }
+    
+    /**
+     * @Route('/layout')
+     */
+     public function layout()
+    {
+        $app  = $this->getYee();
+        $app->render('layout.twig');
+    }
+
+
+     /**
+     * @Route('/login')
+     */
+     public function login()
+    {
+        $app  = $this->getYee();
+        $app->render('login.twig');
+    }
+
+    /**
+     * @Route('/welcome')
+     */
+     public function welcome()
+    {
+        $app  = $this->getYee();
+        $app->render('welcome.twig');
+    }
+
 
 
 }
