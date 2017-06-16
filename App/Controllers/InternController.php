@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 use Yee\Managers\Controller\Controller;
+use App\Models\UserModel;
 
 
 class InternController extends Controller
