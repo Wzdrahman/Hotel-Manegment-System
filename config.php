@@ -41,7 +41,7 @@
                 // group for conncetion parameters. This can hold anything from DB to Memcache to anything that
                 // needs a connection being established
                 'connection' => [
-                    'user' => [
+                    'document' => [
                         'connection.type'       => 'cassandra',
                         'database.user'         => '', 
                         'database.pass'         => '', 
@@ -50,13 +50,13 @@
                         'database.keyspace'     => '',
 
                     ],
-                    'documentation' => [
+                    'hotel' => [
                         'connection.type'       => 'mysqli',
-                        'database.host'        	=> '',
-                        'database.user'         => '',
+                        'database.host'        	=> 'localhost',
+                        'database.user'         => 'root',
                         'database.pass'         => '',
                         'database.port'         => 3306,
-                        'database.name'     	=> '',
+                        'database.name'     	=> 'hotel',
                     ],
                     'memcached' => [
                         'connection.type'       => 'memcached',

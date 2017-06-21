@@ -1,47 +1,58 @@
 <?php
 namespace App\Controllers;
-
 use Yee\Managers\Controller\Controller;
 use App\Models\UserModel;
 
 class LoginController extends Controller
 {
-
-
+   
     /**
-     * @Route('/log')
-     * @Name('intern.index')
-     * @Method('GET')
+     * @Route('/login')
+     * @Name('login.form')
+     * @Method('Get')
      */
-    public function index()
+   public function index()
     {
         $app  = $this->getYee();
-        $app->render('log.twig');
-        
+        $app->render('login.twig');
     }
-
+   
     /**
-     * @Route('/log')
-     * @Name('intern.data')
+     * @Route('/login')
+     * @Name('login.data')
      * @Method('POST')
      */
-
-    public function loginPost()
+     public function loginPost()
     {
-    	$app = $this->getYee();
+        $app  = $this->getYee();
 
-    	$email = $app->request->post('email');
+        $email = $app->request->post('email');
         $password = $app->request->post('password');
 
         $user = new UserModel($email,$password);
 
+        $check = $user->validate();
 
-    	var_dump($email);
-    	var_dump($password);
-    	var_dump($user->getUsers());
-    	$user->validateUser();
-
-    }
-   
+        if(isset($_SESSION['username'])) {
+            $app->render('/welcome',array(
+                'username' => $_SESSION['username']
+                ));
+                        
+        }
+        else{
+            $app->render('login.twig');
+        }
         
+            // if($user->validateUser()){
+            //     $app->redirect('/welcome');
+            //  }else {
+            //     echo 'flash message';
+            // }
+       echo  $email;
+        var_dump($password);
+      
+         $app->render('login.twig');
     }
+    
+
+}

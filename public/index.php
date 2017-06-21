@@ -12,9 +12,8 @@ if (PHP_SAPI == 'cli-server') {
         return false;
     }
 }
-
-
-
+	
+session_start();
 
 require __DIR__ . '/../vendor/autoload.php';
 
