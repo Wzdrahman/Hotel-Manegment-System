@@ -65,5 +65,15 @@ class InternController extends Controller
     }
 
 
+    /**
+     * @Route('/dash')
+     */
+     public function dash()
+    {
+        $app  = $this->getYee();
+        $app->render('dash.twig');
+    }
+ 
+
 
 }

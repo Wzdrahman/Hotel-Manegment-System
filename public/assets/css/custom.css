@@ -1,0 +1,51 @@
+.menu
+{
+	
+}
+.home ,.tickets , .services , .reservations , .restaurant , .contact , .logout
+{
+	padding-left: 0px;
+	margin: 0px;
+	display: inline-block;
+	background-color: #496eb5;
+	width: 160px;
+	height: 120px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 166px; 
+}
+
+.home img {
+	width: 43px;
+	text-align: center;
+	vertical-align: top;
+	position: absolute;
+	padding-top: 10px;		
+
+}
+
+.home  a
+{
+	text-decoration: none;
+	color: white;	
+}
+
+.home:hover {
+	background-color: #4e77b9;
+}
+.tickets:hover {
+	background-color: #4e77b9;
+}
+.tickets a {
+	text-decoration: none;
+	color: white;	
+}
+
+.tickets i {
+	text-align: center;
+	margin-left: 15px;
+	vertical-align: top;
+	position: absolute;
+	padding-top: 10px;
+}

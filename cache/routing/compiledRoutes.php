@@ -4,7 +4,7 @@
 /**
  * Generated with RoutingCacheManager
  *
- * on 2017-06-21 02:54:57
+ * on 2017-06-22 03:44:14
  */
 
 $app = Yee\Yee::getInstance();
@@ -15,6 +15,7 @@ $app->map("/test", "\\App\\Controllers\\InternController::___testRoute")->via("G
 $app->map("/layout", "\\App\\Controllers\\InternController::___layout")->via("GET")->name("");
 $app->map("/login", "\\App\\Controllers\\InternController::___login")->via("GET")->name("");
 $app->map("/welcome", "\\App\\Controllers\\InternController::___welcome")->via("GET")->name("");
+$app->map("/dash", "\\App\\Controllers\\InternController::___dash")->via("GET")->name("");
 
 /* File: C:\xampp\htdocs\kinguin\App\Controllers/LoginController.php*/
 $app->map("/login", "\\App\\Controllers\\LoginController::___index")->via("GET")->name("login.form");
