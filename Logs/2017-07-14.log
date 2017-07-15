@@ -1,0 +1,1642 @@
+ERROR - 2017-07-14 12:30:30 - Twig_Error_Loader: Unable to find template "/edit" (looked into: C:\xampp\htdocs\kinguin/templates). in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:232
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(150): Twig_Loader_Filesystem->findTemplate('/edit')
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(329): Twig_Loader_Filesystem->getCacheKey('/edit')
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(419): Twig_Environment->getTemplateClass('/edit')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit', NULL)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit', NULL)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit')
+#7 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee->render('/edit', Array)
+#8 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('49')
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#10 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#17 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#18 {main}
+ERROR - 2017-07-14 12:32:47 - ErrorException: Undefined variable: data in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('49')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-14 12:51:54 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code:171
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code(171): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(432): __TwigTemplate_a9bcceeb1433f5f9a60988d3d2aca5eb8ad520d38e1ec37827f8f0daaa0fc425->doDisplay(Array, Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#8 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#9 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#11 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#18 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#19 {main}
+
+Next Twig_Error_Runtime: An exception has been thrown during the rendering of a template ("Array to string conversion"). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#7 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#9 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#16 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#17 {main}
+ERROR - 2017-07-14 12:52:05 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code:171
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code(171): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(432): __TwigTemplate_a9bcceeb1433f5f9a60988d3d2aca5eb8ad520d38e1ec37827f8f0daaa0fc425->doDisplay(Array, Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#8 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#9 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#11 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#18 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#19 {main}
+
+Next Twig_Error_Runtime: An exception has been thrown during the rendering of a template ("Array to string conversion"). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#7 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#9 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#16 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#17 {main}
+ERROR - 2017-07-14 12:52:35 - Twig_Error_Syntax: Unexpected token "name" of value "data" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#9 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#10 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#12 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#19 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#20 {main}
+ERROR - 2017-07-14 12:53:03 - Twig_Error_Syntax: Unexpected token "name" of value "data" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#9 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#10 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#12 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#19 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#20 {main}
+ERROR - 2017-07-14 12:53:13 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code:171
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code(171): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(432): __TwigTemplate_a9bcceeb1433f5f9a60988d3d2aca5eb8ad520d38e1ec37827f8f0daaa0fc425->doDisplay(Array, Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#8 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#9 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#11 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#18 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#19 {main}
+
+Next Twig_Error_Runtime: An exception has been thrown during the rendering of a template ("Array to string conversion"). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#7 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#9 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#16 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#17 {main}
+ERROR - 2017-07-14 12:54:35 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code:171
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code(171): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(432): __TwigTemplate_a9bcceeb1433f5f9a60988d3d2aca5eb8ad520d38e1ec37827f8f0daaa0fc425->doDisplay(Array, Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#8 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#9 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#11 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#18 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#19 {main}
+
+Next Twig_Error_Runtime: An exception has been thrown during the rendering of a template ("Array to string conversion"). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#7 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#9 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#16 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#17 {main}
+ERROR - 2017-07-14 12:54:36 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code:171
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code(171): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(432): __TwigTemplate_a9bcceeb1433f5f9a60988d3d2aca5eb8ad520d38e1ec37827f8f0daaa0fc425->doDisplay(Array, Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#8 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#9 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#11 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#18 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#19 {main}
+
+Next Twig_Error_Runtime: An exception has been thrown during the rendering of a template ("Array to string conversion"). in C:\xampp\htdocs\kinguin\templates\Restaurant\restaurant.twig:89
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#6 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#7 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#9 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#16 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#17 {main}
+ERROR - 2017-07-14 13:30:46 - ErrorException: Undefined variable: app in C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php:135
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(135): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 135, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#2 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-07-14 13:31:22 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 13:31:50 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 13:38:35 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 13:40:01 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 13:40:05 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 13:40:32 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 13:45:39 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:05:26 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =$id) Unknown column '$id' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(119): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:07:04 - ErrorException: Array to string conversion in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:762
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(762): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\xampp\\htdocs...', 762, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(636): Yee\Libraries\Database\MysqliDB->_buildTableData(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(136): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:07:25 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =."$id") You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"$id"' at line 5 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(119): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('50')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('50')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:08:29 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:08:43 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:08:48 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:08:49 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:09:02 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 14:09:25 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:19:39 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:21:34 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:24:03 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:24:25 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:24:25 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:24:45 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:24:51 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:25:34 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:55:58 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 15:58:17 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:03:35 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:03:40 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:03:40 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:03:50 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:03:50 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:03:58 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:04:21 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:04:31 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:04:54 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:05:07 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:05:11 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:05:19 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:05:24 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:05:31 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:05:37 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:05:45 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:05:54 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:06:06 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:06:06 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:06:10 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:06:37 - Twig_Error_Syntax: Unexpected token "punctuation" of value ":" ("end of print statement" expected). in C:\xampp\htdocs\kinguin\templates\edit.twig:6
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(148): Twig_TokenStream->expect(4)
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\TokenParser\For.php(42): Twig_Parser->subparse(Array)
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(190): Twig_TokenParser_For->parse(Object(Twig_Token))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Parser.php(103): Twig_Parser->subparse(NULL, false)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(692): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('/edit.twig')
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('/edit.twig', NULL)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('/edit.twig', NULL)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('/edit.twig')
+#11 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee->render('/edit.twig', Array)
+#12 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('51')
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#14 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#21 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#22 {main}
+ERROR - 2017-07-14 16:06:45 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:06:46 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:06:56 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:28:02 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:28:02 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:28:23 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:28:44 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:28:44 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:33:23 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:33:23 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:33:31 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-14 16:38:53 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}

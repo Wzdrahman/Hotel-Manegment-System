@@ -27,7 +27,7 @@ public function __construct($email,$password,$password1,$username ,$firstName,$s
 		$this->secondName   = $secondName;
 		$date=date('Y-m-d');
 		
-		$b=$this->db = $this->app->connection['hotel'];	
+		$con = $this->db = $this->app->connection['hotel'];	
 		
 	}
 
@@ -95,6 +95,9 @@ public function __construct($email,$password,$password1,$username ,$firstName,$s
         var_dump($firstName);
 
 	 $this->db->insert('user', $data);
+
+	
+	
 
 
 

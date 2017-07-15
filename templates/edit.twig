@@ -1,0 +1,26 @@
+ {% include "common/header.twig" %}
+
+ 
+  {% for order in edit.orders %}	 
+
+
+		<form method="POST" action="/update/{{order.table_order_id}}">
+		<label for="table_number">Table №</label>
+		<input type="text" value="{{ order.table_number }}" name="table_number"></br>
+		{{flash['error_table']}}
+		<label for="sub_cat	egory">Sub Category</label>
+		<input type="text" name="subcategory" value="{{ order.name }}"/>
+		{{flash['error_subcategory']}}
+		</br>
+		<label for="quantity">Quantity</label>
+		<input type="text"  name="quantity" value="{{ order.quantity }}">
+		{{flash['error_quantity']}}
+		</br>
+		<input type="submit" name="Save" value="save">
+		{% endfor %}
+		</form>
+    
+
+
+{% include "common/footer.twig" %}
+

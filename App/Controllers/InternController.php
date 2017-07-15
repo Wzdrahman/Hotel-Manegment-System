@@ -73,7 +73,13 @@ class InternController extends Controller
         $app  = $this->getYee();
         $app->render('dash.twig');
     }
- 
 
-
+    /**
+     * @Route('/edit')
+     */
+     public function edit()
+    {
+        $app  = $this->getYee();
+        $app->render('edit.twig');
+    }
 }
