@@ -1,0 +1,110 @@
+ERROR - 2017-08-07 09:32:21 - Twig_Error_Loader: Unable to find template "common/constant.twig" (looked into: C:\xampp\htdocs\kinguin/templates) in "Restaurant/restaurant.twig" at line 2. in C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:232
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(150): Twig_Loader_Filesystem->findTemplate('common/constant...')
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(329): Twig_Loader_Filesystem->getCacheKey('common/constant...')
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(419): Twig_Environment->getTemplateClass('common/constant...')
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(366): Twig_Environment->loadTemplate('common/constant...', NULL)
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(462) : eval()'d code(21): Twig_Template->loadTemplate('common/constant...', 'Restaurant/rest...', 2)
+#5 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(432): __TwigTemplate_a9bcceeb1433f5f9a60988d3d2aca5eb8ad520d38e1ec37827f8f0daaa0fc425->doDisplay(Array, Array)
+#6 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(403): Twig_Template->displayWithErrorHandling(Array, Array)
+#7 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Template.php(411): Twig_Template->display(Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(91): Twig_Template->render(Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/rest...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/rest...', NULL)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/rest...')
+#12 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(30): Yee\Yee->render('Restaurant/rest...', Array)
+#13 [internal function]: App\Controllers\Restaurant\RestaurantController->index()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#15 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#19 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#20 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#21 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#22 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#23 {main}
+ERROR - 2017-08-07 09:32:52 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(88): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 [internal function]: App\Controllers\Restaurant\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-08-07 09:32:54 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(88): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 [internal function]: App\Controllers\Restaurant\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-08-07 12:29:20 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(88): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 [internal function]: App\Controllers\Restaurant\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-08-07 12:29:28 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(88): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 [internal function]: App\Controllers\Restaurant\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-08-07 12:40:30 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(88): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 [internal function]: App\Controllers\Restaurant\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-08-07 12:40:37 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Restaurant\RestaurantController.php(88): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 [internal function]: App\Controllers\Restaurant\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}

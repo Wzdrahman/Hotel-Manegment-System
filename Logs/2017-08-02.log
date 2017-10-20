@@ -1,0 +1,113 @@
+ERROR - 2017-08-02 08:41:46 - ErrorException: Undefined variable: category in C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php(27): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(24): App\Models\TableModel\TableModel->getSubCategories(Array)
+#2 [internal function]: App\Controllers\Table\TableController->showCategory()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-08-02 10:07:16 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php:30
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php(30): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(24): App\Models\TableModel\TableModel->getSubCategories(Array)
+#2 [internal function]: App\Controllers\Table\TableController->showCategory()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-08-02 10:07:33 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php:30
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php(30): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(24): App\Models\TableModel\TableModel->getSubCategories(Array)
+#2 [internal function]: App\Controllers\Table\TableController->showCategory()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-08-02 10:07:43 - ErrorException: Undefined offset: 1 in C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php:30
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php(30): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(24): App\Models\TableModel\TableModel->getSubCategories(Array)
+#2 [internal function]: App\Controllers\Table\TableController->showCategory()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-08-02 10:11:24 - ErrorException: Undefined index: category_id in C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php:31
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php(31): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(24): App\Models\TableModel\TableModel->getSubCategories(Array)
+#2 [internal function]: App\Controllers\Table\TableController->showCategory()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-08-02 10:33:22 - ErrorException: Undefined index: name in C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php:31
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\TableModel\TableModel.php(31): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(24): App\Models\TableModel\TableModel->getSubCategories(Array)
+#2 [internal function]: App\Controllers\Table\TableController->showCategory()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-08-02 13:23:50 - Twig_Error_Syntax: Unexpected ")". in C:\xampp\htdocs\kinguin\templates\Restaurant\menu.twig:35
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Lexer.php(227): Twig_Lexer->lexExpression()
+#1 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Lexer.php(126): Twig_Lexer->lexVar()
+#2 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(653): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(750): Twig_Environment->tokenize(Object(Twig_Source))
+#4 C:\xampp\htdocs\kinguin\vendor\twig\twig\lib\Twig\Environment.php(447): Twig_Environment->compileSource(Object(Twig_Source))
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('Restaurant/menu...')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('Restaurant/menu...', NULL)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('Restaurant/menu...', NULL)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(766): Yee\View->display('Restaurant/menu...')
+#9 C:\xampp\htdocs\kinguin\App\Controllers\Table\TableController.php(33): Yee\Yee->render('Restaurant/menu...', Array)
+#10 [internal function]: App\Controllers\Table\TableController->showCategory()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#12 [internal function]: Yee\Managers\Controller\Controller::__callStatic('showCategory', Array)
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#17 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#18 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#19 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#20 {main}

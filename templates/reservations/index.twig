@@ -1,0 +1,112 @@
+{% extends 'Layout/layout.twig' %}
+
+{% block body %}
+
+<div id="calendar">
+	<div class="box">
+	    {% for naviLabel in navi %}
+		    <div class="header">
+
+		    	<a class="prev" href="/reservation/{{ navi.preMonth }}/{{ navi.preYear }}">Prev</a>
+		    	<span class="title">{{navi.year}}/{{navi.month}}</span>
+			 	<a class="next" href="/reservation/{{ navi.nextMonth }}/{{navi.nextYear}}">Next</a>
+	        </div>
+		{% endfor %}		
+	</div>	
+
+	<div class="box-content">
+		<table class="dates">
+			<tr class="date-month test">
+			{% for i in -2..dayinmoth - 2  %}
+				{% if i == -2 %}
+				<td class="test">rooms</td> 
+				{% endif %} 
+				{% if i == -2 %}
+				<td class="test">capacity</td>
+				{% endif %}
+				{% if i == -2 %}
+				<td class="test">status</td>
+				{% else %}
+				{% set i=i+2 %}	
+				<td>{{ i }}</td>
+				{% endif %}
+				{% endfor %}
+			</tr>
+			
+			{% for room in rooms %}
+				
+			<tr class="roomId" id="{{room.id}}" >
+				<td class="test">{{room.room}} <a href="/reservationedit/{{room.id}}"  onclick="popupEdit()"><img class="edit" src="/assets/img/edit.png"></a><img class="edit" width="13px" height="13px" src="/assets/img/delete.png"></a></td><td class="test">{{ room.capacity }}</td><td class="test">{{room.status }}</td>
+					{% for z in 1..dayinmoth  %}
+					{% set class = '' %}
+						{% for event in ev %}
+							{% if event.room_id == room.id%}
+							{% if event.start | date('j') ==  z %}
+									{% set class = 'ev-2' %}
+							{% endif %}
+							{% if event.end | date('j') == z %}
+									{% set class = 'ev-2'%} 
+								
+									{% elseif z > event.start | date('j') and z <= event.end | date('j') %}
+									{% set class = 'ev-2'%}
+									{% endif %}
+								{% endif %}
+									
+
+						{% endfor %}
+						<td onclick="popUp()" class="{{ allDateMonth[loop.index] }} {{ class }} "  id="{{z}}"></td>
+						{% endfor %}
+						{% endfor %}
+				</tr>	
+		</table>	
+	</div>
+</div>
+
+<div class="view">
+<div class="popup ">
+		 <div class="popuptext" id="myPopup">
+		 	<button class="arrow"></button>
+		 <h1>New Reservation</h1>
+			<form action="" method="POST">
+				<label for="name">room:</label>
+				<input type="text" name="name"></br>
+				<label for="start">Start date:</label>
+				<input type="text"  name="start" id="datepicker"></br>
+				<label for="end">End date</label>
+				<input type="text"  name="end" id="datepickerend"></br>
+				<!-- <label for="room">Room:</label>
+				<input type="text" name="room"></br> -->
+				<label for="status">Status:</label>
+				<input type="text" name="status">
+
+				<!-- <label for="male">Male</label>
+				<input type="checkbox" name="male">
+				<label for="female">Female</label>
+				<input type="checkbox" name="female"></br> -->
+				<input type="hidden"  value="" name="id">
+				<input type="submit" name="book" value="book" id="reserv">
+			</form>
+		 </div>
+	 </div>
+</div>
+
+<div><button onclick="popRoom()" class="btn btn-success">add Room</button></div>
+
+<div class="view">
+ <div class="popupRoom">
+		 <div class="addroom" id="popRoom">
+		  <button class="arrow"></button>
+		 <h1>New Room</h1>
+			<form action='/reservation/room' method="POST">
+				<label for="room">Room Name:</label>
+				<input type="text" name="room"></br>
+				<label for="capacity">capacity:</label>
+				<input type="text" name="capacity"></br>
+				<label for="status">status</label>
+				<input type="text" name="status"></br>
+				<input type="submit" name="Room" class="btn btn-success" value="new room">
+			</form>
+		 </div>
+	 </div>
+</div>
+{% endblock %}

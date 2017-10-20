@@ -1,8 +1,7 @@
 <?php
 namespace App\Controllers;
-use Yee\Managers\Controller\Controller;
-use App\Models\UserModel;
 
+use Yee\Managers\Controller\Controller;
 
 class InternController extends Controller
 {
@@ -12,13 +11,13 @@ class InternController extends Controller
      */
     public function index()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('test.twig', array(
-                'data' => 'hello',
-                'test' => 'test',
-                'countries' => 'bulgaria'
-            ));
-        
+            'data' => 'hello',
+            'test' => 'test',
+            'countries' => 'bulgaria',
+        ));
+
     }
 
     /**
@@ -27,59 +26,76 @@ class InternController extends Controller
      */
     public function testRoute()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('test.twig', array(
-                'data' => 'hello',
-                'test' => 'test',
-                'countries' => 'the uk'
-            ));
-        
+            'data' => 'hello',
+            'test' => 'test',
+            'countries' => 'the uk',
+        ));
+
     }
-    
+
     /**
      * @Route('/layout')
      */
-     public function layout()
+    public function layout()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('layout.twig');
     }
 
-
-     /**
+    /**
      * @Route('/login')
      */
-     public function login()
+    public function login()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('login.twig');
     }
 
     /**
      * @Route('/welcome')
      */
-     public function welcome()
+    public function welcome()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('welcome.twig');
     }
-
 
     /**
      * @Route('/dash')
      */
-     public function dash()
+    public function dash()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('dash.twig');
     }
 
     /**
      * @Route('/edit')
      */
-     public function edit()
+    public function edit()
     {
-        $app  = $this->getYee();
+        $app = $this->getYee();
         $app->render('edit.twig');
     }
+
+    /**
+     * @Route('/order')
+     */
+    public function order()
+    {
+        $app = $this->getYee();
+        $app->render('order.twig');
+    }
+
+    /**
+     * @Route('/table')
+     */
+    public function menu()
+    {
+        $app = $this->getYee();
+        $app->render('Restaurant/menu.twig');
+    }
+
 }

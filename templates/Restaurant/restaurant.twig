@@ -1,68 +1,67 @@
+
+
+
 {% include "common/header.twig" %}
-{% include 'common/constant.twig'  %}
-
-{% set select = { 2.5: 'Macaroni',
-1.5: 'Coffee',
-2.8: 'Soup',
-3: 'Sandwitch',
-4.5:'Steak' }
-
- %}
-
- {% set tempArray = {} %}
-
- <ul>
-    {% for key,value in select %}
-    Key : {{ key }}
-    {% set tempArray = key %}
-    Value : {{ value }}
-{% endfor %}
- <h2>
- {{tempArray}}
- </h2>
-
-
-</ul>
-
-
-
-
+<div class="restaurant-cont">
 <div class="forma" style="float: left; width: 40%">
 	<form method="POST">
 		<label for="table_number">Table №</label>
-		<input type="text" name="table_number"></br>
+		<input class="form-control" type="text" placeholder="table №" name="table_number"></br>
 		{{flash['error_table']}}
-		<label for="sub_cat	egory">Sub Category</label>
-		<select name="sub_category">
+		<label for="sub_category">Subcategory</label>
+		<select class="form-control" name="sub_category">
 			{% for product in data.products %}
 			<option value="{{product.id}}">{{product.name}}</option>
 			{% endfor %}
 		</select>	
+		</br>
+		{{flash['error_table']}}
+		<label>Add new Subcategory</label>
+		<input class="form-control" type="text" name="sub">
 		{{flash['error_subcategory']}}
 		</br>
 		<label for="quantity">Quantity</label>
-		<input type="text" name="quantity">
+		<input class="form-control" type="text" placeholder="quantity" name="quantity">
 		{{flash['error_quantity']}}
 		</br>
-		<input type="submit" name="Save" value="save">
-		<input type="submit" name="Order" value="order">
-		<input type="submit" name="Clear" value="status"></br>
-		<input type="submit" value="New Vat + Disc" name="discount">
-		<input type="submit" value="Menu" name="menu">
-	</form>
+		<input class="btn btn-success" type="button" value="order"/>
+		<div class="popup" onclick="popUp()">
+	
+
+  <div class="popuptext" id="myPopup">
 	<table>
-	<h3>{{key}}</h3>
-	<!-- {% for hotel in restaurant %}
+		 <tr>
+    	<th>Table number</th>
+    	<th>Sub category</th>
+    	<th>Quantity</th>
+    	<th>pe6o</th>
+    	<th>ivan</th>
+    </tr>
 
-		<tr>
-			<td>{{hotel.table_number}}</td>
-		</tr>
-
-	{% endfor %} -->
-	</table>	
-</div>
+{% for order in data.orders %}
+    <tr>
+    	<td><span>{{ order.table }}</span><br></td>
+    	<td><span>{{ order.product_name }}</span> <span>{{ order.price }}$</span><br></td>
+    	<td><span>{{ order.quantity }}</span><br></td>
+    	<td><span>{{ order.quantity * order.price }}$</span></td>
+    </tr>
+    <tr><td></td><td></td><td></td><td>{{ order.quantity * order.price + order.quantity * order.price }}$</td></tr>
+    {% endfor %}
+	<tr>
+    	<td>
+    		<a href="/restaurantdel/{{order.table_order_id}}"><input type="button" name="del" class="btn btn_small btn-success" value="receipt"></a>
+    	</td>
+    </tr>
+		
+	</table>
+  </div>
+  </div>	
+	</form>
 
 	
+</div>
+
+
 
 
 
@@ -73,10 +72,7 @@
 </br>
 
 <div  class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
-
-  <!-- Table -->
+  <div class="panel-heading">Order</div>
   <table class="table">
     <tr>
     	<th>Table number</th>
@@ -89,25 +85,33 @@
     
     {% for order in data.orders %}
     <tr>
-    	<td><span>{{ order.table_number }}</span><br></td>
-    	<td><span>{{ order.name }} <span>{{ order.price }}$</span><br></td>
+    	<td><span>{{ order.table }}</span><br></td>
+    	<td><span>{{ order.product_name }}</span> <span>{{ order.price }}$</span><br></td>
     	<td><span>{{ order.quantity }}</span><br></td>
-    	<td><span>{{ order.quantity * order.price }}$</span></td>
-   
+    	<td><span>{{ order.quantity * order.price }}$</span></td>data
     	<td>
-    		<a href="/restaurantdel/{{order.table_order_id}}"><input type="button" name="del" class="btn btn_small btn-danger" value="delete"></a>
-    		<a href="/restaurantedit/{{order.table_order_id}}"><input type="button" name="edit" value="Edit" class="btn btn_small btn-warning"></a>
+    		<a href="/restaurantdel/{{order.id}}"><input type="button" name="del" class="btn btn_small btn-danger" value="delete"></a>
+    		<a href="/restaurantedit/{{order.id}}"><input type="button" name="edit" value="Edit" class="btn btn_small btn-warning"></a>
     	</td>
     </tr>
+    
     {% endfor %}
+   <!--  <tr><td></td><td></td><td></td><td>{{ order.quantity * order.price+order.quantity * order.price }}$</td></tr>	 -->
+     </table>
+			
+</div>
+
+ <div class="pays"><a href="/invoice"><button class="btn-success">pay</button></a></div> 
+
 		
     {% if order.table_order_id %}
+    <div class="container">
 		<form method="POST">
 		<label for="table_number">Table №</label>
-		<input type="text" name="table_number"></br>
+		<input class="form-control" type="text" name="table_number"></br>
 		{{flash['error_table']}}
 		<label for="sub_cat	egory">Sub Category</label>
-		<select name="sub_category">
+		<select class="form-control" name="sub_category">
 			{% for product in data.products %}
 			<option value="{{product.id}}">{{product.name}}</option>
 			{% endfor %}
@@ -115,24 +119,24 @@
 		{{flash['error_subcategory']}}
 		</br>
 		<label for="quantity">Quantity</label>
-		<input type="text" name="quantity">
+		<input class="form-control" type="text" name="quantity">
 		{{flash['error_quantity']}}
 		</br>
 		<input type="submit" name="Save" value="save">
 		</form>
+		</div>	
     {% endif %}
+</br>
     
-  </table>
+<div class="tables">
+	<div class="table-table"><a href="/tables">table 1</a></div>
+	<div class="table-table"><a href="/tables">table 2</a></div>
+	<div class="table-table"><a href="/tables">table 3</a></div>
+	<div class="table-table"><a href="/tables">table 4</a></div>
+	<div class="table-table"><a href="/tables">table 5</a></div>
+	<div class="table-table"><a href="/tables">table 6</a></div>
+	<div class="table-table"><a href="/tables">table 7</a></div>
 </div>
-<!-- 
-{% set page = { title: 'About', 
-                subtitle: 'About Mijingo', 
-                slug: 'about' } 
-%}
-
-<h3>{{ page.title }}</h3>
- -->
-
-	
+</div>
 
 {% include "common/footer.twig" %}

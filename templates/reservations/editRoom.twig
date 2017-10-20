@@ -1,0 +1,28 @@
+{% include 'common/header.twig' %}
+
+
+{% for room in rooms %}
+<div class="container">
+
+<h1>Update Room</h1>
+	<form  method="POST" action="/updateroom/{{room.id}}">
+	<div class="form-group">
+		<label for="room">Room name</label>
+			<input  class="form-control" type="text" value="{{ room.room }}"  placeholder="room name" name="room"></br>
+			</div>
+			 <div class="form-group">
+		<label for="capacity">Capacity</label>
+			<input class="form-control" type="text"  name="capacity" placeholder="capacity" value="{{ room.capacity }}"></br>
+					{{flash['error_quantity']}}	
+					</div>
+				 <div class="form-group">
+		<label for="quantity">Status</label>
+			<input class="form-control" type="text"  name="status" placeholder="status" value="{{ room.status }}"></br>
+			</div>
+					{{flash['error_quantity']}}
+			<input type="submit" name="submit" value="update" class="btn btn-success">
+			{% endfor %}
+		</form>		
+</div>
+	
+	{% include 'common/footer.twig' %}

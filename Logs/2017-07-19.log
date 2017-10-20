@@ -1,0 +1,998 @@
+ERROR - 2017-07-19 10:55:25 - ErrorException: Undefined variable: newOrder in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:142
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(142): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 142, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->ShowOrder()
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('ShowOrder', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 14:46:39 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id 
+	 	 WHERE orders.table_order_id = myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(134): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 14:46:40 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id 
+	 	 WHERE orders.table_order_id = myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(134): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:20:51 - ErrorException: Problem preparing query (DELETE FROM orders WHERE   table_order_id = ? ) Unknown column 'table_order_id' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(377): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(115): Yee\Libraries\Database\MysqliDB->delete('orders')
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(68): App\Models\RestaurantModel\RestaurantModel->DeleteRow('75')
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->Delete('75')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Delete', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-19 15:20:54 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id) Unknown column 'orders.table_order_id' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:20:57 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id 
+	 	 WHERE orders.table_order_id = 72) Unknown column 'orders.table_order_id' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(134): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('72')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('72')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:20:59 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id) Unknown column 'orders.table_order_id' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:24:32 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id) Unknown column 'orders.table_order_id' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:24:36 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id) Unknown column 'orders.table_order_id' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:28:21 - ErrorException: Problem preparing query (
+	    	$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_id
+	 	 JOIN product on product.id = orders.product_id) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orde' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t    \t$orderD...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:28:36 - ErrorException: Problem preparing query (
+	    	$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_id
+	 	 JOIN product on product.id = orders.product_id) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orde' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t    \t$orderD...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:29:44 - ErrorException: Problem preparing query (
+	    	$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_id
+	 	 JOIN product on product.id = orders.product_id) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orde' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t    \t$orderD...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:31:22 - ErrorException: Problem preparing query (
+	    	$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_id
+	 	 JOIN product on product.id = orders.product_id) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$orderData = array(
+		 SELECT product.name, product.price,orders.table_id, orde' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t    \t$orderD...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:46:54 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:47:30 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:48:38 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:48:44 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:48:49 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:48:52 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:48:53 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:51:22 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:51:23 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:51:45 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:51:45 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 15:51:45 - ErrorException: Problem preparing query (
+			SELECT orders.id, orders.quantity,
+				 restaurant_tables.table_number as 'table',
+				 product.name as 'product_name',
+				 product.price 
+			FROM orders ) Unknown column 'restaurant_tables.table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(91): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t\tSELECT ord...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(21): App\Models\RestaurantModel\RestaurantModel->getData()
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->index()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('index', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-19 16:02:56 - ErrorException: Problem preparing query (INSERT into table_order(`table_id`) VALUES(?)) Table 'hotel.table_order' doesn't exist in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(324): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(72): Yee\Libraries\Database\MysqliDB->insert('table_order', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(47): App\Models\RestaurantModel\RestaurantModel->insertData()
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->restaurantData()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('restaurantData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-19 16:31:12 - ErrorException: Undefined variable: result in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:85
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(85): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 85, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('62')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:32:04 - ErrorException: Undefined index: table in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('62')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:32:22 - ErrorException: Undefined index: table in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('62')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:32:23 - ErrorException: Undefined index: table in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('62')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:33:40 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:33:40 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:33:54 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:34:22 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:35:10 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:35:40 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:36:24 - ErrorException: Undefined variable: result in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:85
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(85): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 85, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('62')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:41:23 - ErrorException: Undefined variable: edit in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:95
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 95, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('63')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:41:24 - ErrorException: Undefined variable: edit in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:95
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(95): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 95, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('63')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:41:50 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:42:50 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:42:50 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:42:54 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:46:26 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:46:31 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:46:53 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:46:53 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:47:05 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:47:06 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:47:27 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:47:28 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:50:19 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:50:19 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:50:53 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-07-19 16:50:54 - ErrorException: Undefined offset: 0 in C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(87): Yee\Yee::handleErrors(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}

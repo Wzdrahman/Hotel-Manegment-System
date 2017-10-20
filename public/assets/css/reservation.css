@@ -1,0 +1,186 @@
+p, body, td { font-family: Tahoma,  Arial, Sans-Serif; height: 50 %; font-size: 10pt; }
+body { padding: 0px; margin: 0px; background-color: #ffffff; }
+a { color: #1155a3; }
+
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  width: 80%;
+  height: 40%;
+  font-family:Helvetica, "Times New Roman", Times, serif;
+}
+ 
+div#calendar div.box{   
+    position:relative;
+    top:0px;
+    left:0px;
+    width:70%;
+    height:60px;
+    background-color: #222331;      
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:20%;
+    top:15px;
+    width:582px;
+    height:40px;   
+    text-align:center;
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next { 
+    position:absolute;
+    font-size: 22px;    
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:22px;
+}
+ 
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:0px;
+}
+ 
+div#calendar table {
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+
+div#calendar table.dates tr td{
+    width: 120px;
+    height: 22px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.popup {
+    position: absolute;
+    cursor: pointer;
+    top: 130px;
+    left: 20%;
+    
+   /* left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;*/
+}
+
+/* The actual popup (appears on top) */
+/*.view{
+    background-color: #2223313;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}*/  
+
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 560px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px ;
+    z-index: 1;
+    bottom: -225%;
+    left: 50%;
+    margin-left: -80px;
+        
+}
+
+.popup .show {
+    visibility: visible;
+    position: relative;
+    border: 1px solid black;
+    /*background-color: #949ba8;*/
+
+} 
+
+.hide {
+    visibility: hidden;
+}
+input[type=text]{
+    color: initial !important; 
+}
+
+.arrow {
+cursor: pointer;
+color: white;
+border: 1px solid #AEAEAE;
+border-radius: 30px;
+background: #605F61;
+font-size: 31px;
+font-weight: bold;
+display: inline-block;
+line-height: 0px;
+padding: 11px 3px;
+margin-left: 0;
+}
+
+.arrow:before{
+ content: "×";
+}
+
+.popupRoom {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popupRoom .addroom {
+    visibility: hidden;
+    width: 560px;
+    /*background-color: #a3c6ff;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px ;
+    position: absolute;
+    z-index: 1;
+    bottom: -225%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popupRoom .show {
+    visibility: visible;
+    position: relative;
+    border: 1px solid black;
+    background-color: #949ba8;
+}
+
+td.test a > img {
+    width: 15px;
+    height: 15px;
+}
+
+.test {
+    color: white;
+    background-color: #222331;
+}
+
+.ev {
+    background-color: #9CCC65; //green confirmed
+}
+
+.ev-2 {
+    background-color: #40C4FF; //blue arrived
+}
+
+.ev-3 {
+    background-color: #FFB74D; // orange new
+}
+

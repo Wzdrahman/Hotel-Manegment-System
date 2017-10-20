@@ -1,0 +1,18 @@
+{% include "common/header.twig" %}
+
+
+<form action="/order" method="POST">
+	<table >
+		<tr><td>Transaction ID <input type="text" name="txtID"> <?php echo date("m / d / Y");?></td></tr>
+		<tr><td><h2>Your Order:</h2></td></tr>
+		<tr><td><input  type="checkbox"  name="cbItem[]" value="Chicken Joy"> Chicken Joy (PhP 90.00)</td> <td>Quantity <input type="text" name="txtQty[]"></td></tr>
+		<tr><td><input  type="checkbox" name="cbItem[]" value="Jolly Spaghetti"> Jolly Spaghetti (PhP 50.00)</td> <td>Quantity <input type="text" name="txtQty[]"></td></tr>
+		<tr><td><input type="checkbox" name="cbItem[]" value="Yum Burger"> Yum Burger (PhP 29.00)</td> <td>Quantity <input type="text" name="txtQty[]"></td></tr>
+		<tr><td><input type="checkbox" name="cbItem[]" value="Jolly Twirls"> Jolly Twirls (PhP 25.00)</td> <td>Quantity <input type="text" name="txtQty[]"></td></tr>
+		<tr><td><input type="checkbox" name="cbItem[]" value="Big Champ"> Big Champ (PhP 120.00)</td> <td>Quantity <input type="text" name="txtQty[]"></td></tr>
+		<tr><td>Amount Given: <input type="text" name="txtAmount"></td> <td><input type="submit" name="btnGen" value="Generate Receipt">  <input type="reset" value="Clear">
+	</table>
+</form>
+   
+
+{% include "common/footer.twig" %}

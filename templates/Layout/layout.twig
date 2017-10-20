@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<!--pivot librieries -->
+	
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+      
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
+     
+	
+	<meta charset="utf-8">
+    <title>Variant HTML Builder by Medium Rare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="./assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+    <script src="./assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Tabs - Default functionality</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/reservation.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/tableMenu.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/dash.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/restaurant.css">
+</head>
+<body>
+
+<div id="header">
+	<div class="logo"><a>Hotel<span></span></a></div>
+	
+</div>
+<div class="ivan">
+<a class="mobile" href="#">Hotel Manegment System </a>
+<!-- <span class="admins"><img src="./assets/img/ad.png" width="15px" height="15px" />   Admin</span> -->
+</div>
+<div id="container">
+	<div class="sidebar">
+		<ul id="nav">
+			<li><a >Dashboard</a></li>
+			<li><img src="/assets/img/screen.jpg"></li>
+			<li><a>User</a></li>
+			<li><a href="/Reservation">Reservation</a></li>
+			<li><a href="/Restaurant">Restaurant</a></li>
+			<li><a href="#">Logout</a></li>
+			<!-- <button onclick="popRoom()" class="btn btn-success">add Room</button> -->
+			
+
+		</ul>
+	</div>
+	<span c>Occupancy</span>
+<div><img src="./assets/img/chart.png"></div>
+<span><img src="./assets/img/calendar.png"></span>
+</div>
+
+	{% block body %}
+		
+	{% endblock %}
+
+
+	{% include "common/footer.twig" %}
+</body>
+</html>

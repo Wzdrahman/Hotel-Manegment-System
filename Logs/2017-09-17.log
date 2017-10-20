@@ -1,0 +1,363 @@
+ERROR - 2017-09-17 10:21:52 - ErrorException: Undefined index: username in C:\xampp\htdocs\kinguin\App\Models\RegisterUserModel\RegisterUserModel.php:51
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\RegisterUserModel\RegisterUserModel.php(51): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\RegisterController.php(40): App\Models\RegisterUserModel\RegisterUserModel->insertUser()
+#2 [internal function]: App\Controllers\RegisterController->registerPost()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('registerPost', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-17 11:11:31 - ErrorException: Undefined variable: hash in C:\xampp\htdocs\kinguin\App\Controllers\RegisterController.php:39
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\RegisterController.php(39): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 [internal function]: App\Controllers\RegisterController->registerPost()
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('registerPost', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-09-17 11:34:46 - ErrorException: Undefined variable: username in C:\xampp\htdocs\kinguin\App\Models\Login\UserModel.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\Login\UserModel.php(18): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\LoginController.php(33): App\Models\Login\UserModel->__construct('petar__89@abv.b...', '1234')
+#2 [internal function]: App\Controllers\LoginController->loginPost()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('loginPost', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-17 11:35:44 - ErrorException: Problem preparing query (SELECT * FROM user WHERE   user_id = ?  LIMIT 1) Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(273): Yee\Libraries\Database\MysqliDB->_buildQuery(1)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(297): Yee\Libraries\Database\MysqliDB->get('user', 1, '*')
+#5 C:\xampp\htdocs\kinguin\App\Models\Login\UserModel.php(29): Yee\Libraries\Database\MysqliDB->getOne('user')
+#6 C:\xampp\htdocs\kinguin\App\Models\Login\UserModel.php(40): App\Models\Login\UserModel->getUser()
+#7 C:\xampp\htdocs\kinguin\App\Controllers\LoginController.php(37): App\Models\Login\UserModel->validate()
+#8 [internal function]: App\Controllers\LoginController->loginPost()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#10 [internal function]: Yee\Managers\Controller\Controller::__callStatic('loginPost', Array)
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#15 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#16 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#17 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#18 {main}
+ERROR - 2017-09-17 11:36:22 - ErrorException: Undefined index: pass in C:\xampp\htdocs\kinguin\App\Models\Login\UserModel.php:43
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\Login\UserModel.php(43): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\LoginController.php(37): App\Models\Login\UserModel->validate()
+#2 [internal function]: App\Controllers\LoginController->loginPost()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('loginPost', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-17 11:49:29 - ErrorException: Undefined variable: getByEmail in C:\xampp\htdocs\kinguin\App\Controllers\LoginController.php:37
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\LoginController.php(37): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 [internal function]: App\Controllers\LoginController->loginPost()
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('loginPost', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-09-17 12:10:20 - ErrorException: preg_match(): Compilation failed: assertion expected after (?( at offset 16 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:29:39 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:04 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:37 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:46 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:47 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:47 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:47 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:30:49 - ErrorException: preg_match(): Compilation failed: unrecognized character after (? or (?- at offset 15 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:393
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'preg_match(): C...', 'C:\\xampp\\htdocs...', 393, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(393): preg_match('#^/reservation(...', '/reservation', NULL)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Router.php(113): Yee\Route->matches('/reservation')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1370): Yee\Router->getMatchedRoutes('GET', '/reservation')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#9 {main}
+ERROR - 2017-09-17 12:44:48 - InvalidArgumentException: Cannot append view data. Expected array argument. in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\View.php:191
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(765): Yee\View->appendData(99)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(59): Yee\Yee->render('/reservation(/:...', 99)
+#2 [internal function]: App\Controllers\Reservation\ReservationController->insertEv('10', '2017')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-17 12:49:27 - ErrorException: Undefined variable: month in C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(48): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: App\Controllers\Reservation\ReservationController->insertEv('10', '2017')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-09-17 12:54:30 - ErrorException: Undefined property: App\Controllers\Reservation\ReservationController::$month in C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(48): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: App\Controllers\Reservation\ReservationController->insertEv('10', '2017')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-09-17 12:55:15 - ErrorException: Illegal string offset 'month' in C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php:48
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(48): Yee\Yee::handleErrors(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 [internal function]: App\Controllers\Reservation\ReservationController->insertEv('10', '2017')
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-09-17 15:55:29 - ErrorException: A non well formed numeric value encountered in C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php:226
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(8, 'A non well form...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(226): mktime(0, 0, 0, '2017 01 31', '10', '2017')
+#2 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(25): App\Models\ReservationModel\ReservationModel->buildEvent('10', '2017')
+#3 [internal function]: App\Controllers\Reservation\ReservationController->reservation('10', '2017')
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#5 [internal function]: Yee\Managers\Controller\Controller::__callStatic('reservation', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#13 {main}
+ERROR - 2017-09-17 15:55:34 - ErrorException: A non well formed numeric value encountered in C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php:226
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(8, 'A non well form...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(226): mktime(0, 0, 0, '1999 12 31', NULL, NULL)
+#2 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(25): App\Models\ReservationModel\ReservationModel->buildEvent(NULL, NULL)
+#3 [internal function]: App\Controllers\Reservation\ReservationController->reservation()
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#5 [internal function]: Yee\Managers\Controller\Controller::__callStatic('reservation', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#12 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#13 {main}
+ERROR - 2017-09-17 16:08:41 - ErrorException: Undefined variable: lastDay in C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php:227
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(227): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 227, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(25): App\Models\ReservationModel\ReservationModel->buildEvent('10', '2017')
+#2 [internal function]: App\Controllers\Reservation\ReservationController->reservation('10', '2017')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('reservation', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-17 16:14:29 - ErrorException: Problem preparing query (
+            SELECT reservation.room_id,reservation.name,reservation.start,reservation.end,reservation.status FROM reservation WHERE reservation.start >= 2017 10 01 AND  reservation.end ) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10 01 AND  reservation.end' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(230): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n            S...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(25): App\Models\ReservationModel\ReservationModel->buildEvent('10', '2017')
+#5 [internal function]: App\Controllers\Reservation\ReservationController->reservation('10', '2017')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('reservation', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-09-17 16:14:30 - ErrorException: Problem preparing query (
+            SELECT reservation.room_id,reservation.name,reservation.start,reservation.end,reservation.status FROM reservation WHERE reservation.start >= 2017 10 01 AND  reservation.end ) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10 01 AND  reservation.end' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(230): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n            S...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(25): App\Models\ReservationModel\ReservationModel->buildEvent('10', '2017')
+#5 [internal function]: App\Controllers\Reservation\ReservationController->reservation('10', '2017')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('reservation', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-09-17 16:14:30 - ErrorException: Problem preparing query (
+            SELECT reservation.room_id,reservation.name,reservation.start,reservation.end,reservation.status FROM reservation WHERE reservation.start >= 2017 10 01 AND  reservation.end ) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10 01 AND  reservation.end' at line 1 in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(230): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n            S...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(25): App\Models\ReservationModel\ReservationModel->buildEvent('10', '2017')
+#5 [internal function]: App\Controllers\Reservation\ReservationController->reservation('10', '2017')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('reservation', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}

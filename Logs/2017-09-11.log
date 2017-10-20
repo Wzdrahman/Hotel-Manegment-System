@@ -1,0 +1,110 @@
+ERROR - 2017-09-11 10:00:51 - InvalidArgumentException: Route callable must be callable in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:184
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(108): Yee\Route->setCallable(NULL)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(452): Yee\Route->__construct('name', NULL, true)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(494): Yee\Yee->mapRoute(Array)
+#3 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(79): Yee\Yee->post('name')
+#4 [internal function]: App\Controllers\Reservation\ReservationController->insertEv()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#6 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#13 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#14 {main}
+ERROR - 2017-09-11 10:08:22 - InvalidArgumentException: Route callable must be callable in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:184
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(108): Yee\Route->setCallable(NULL)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(452): Yee\Route->__construct('name', NULL, true)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(494): Yee\Yee->mapRoute(Array)
+#3 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(79): Yee\Yee->post('name')
+#4 [internal function]: App\Controllers\Reservation\ReservationController->insertEv()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#6 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#13 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#14 {main}
+ERROR - 2017-09-11 10:21:51 - InvalidArgumentException: Route callable must be callable in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php:184
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(108): Yee\Route->setCallable(NULL)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(452): Yee\Route->__construct('name', NULL, true)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(494): Yee\Yee->mapRoute(Array)
+#3 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(79): Yee\Yee->post('name')
+#4 [internal function]: App\Controllers\Reservation\ReservationController->insertEv()
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#6 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#13 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#14 {main}
+ERROR - 2017-09-11 10:28:14 - ErrorException: Undefined variable: room in C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php:87
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(87): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87, Array)
+#1 [internal function]: App\Controllers\Reservation\ReservationController->insertEv()
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#4 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#10 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#11 {main}
+ERROR - 2017-09-11 10:30:12 - ErrorException: Undefined property: App\Models\ReservationModel\ReservationModel::$name in C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php:296
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(296): Yee\Yee::handleErrors(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 296, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(87): App\Models\ReservationModel\ReservationModel->insertEvent('102', '09/11/2017', '09/12/2017', 'clean')
+#2 [internal function]: App\Controllers\Reservation\ReservationController->insertEv()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-11 10:47:11 - ErrorException: Undefined variable: name in C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(18): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(86): App\Models\ReservationModel\ReservationModel->__construct()
+#2 [internal function]: App\Controllers\Reservation\ReservationController->insertEv()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('insertEv', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}
+ERROR - 2017-09-11 23:59:51 - ErrorException: Undefined index: allDateInMonth in C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php:88
+Stack trace:
+#0 C:\xampp\htdocs\kinguin\App\Models\ReservationModel\ReservationModel.php(88): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 C:\xampp\htdocs\kinguin\App\Controllers\Reservation\ReservationController.php(55): App\Models\ReservationModel\ReservationModel->show()
+#2 [internal function]: App\Controllers\Reservation\ReservationController->getCurentDate('10', '2017')
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('getCurentDate', Array)
+#5 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#12 {main}

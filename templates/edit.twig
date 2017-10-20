@@ -1,26 +1,65 @@
- {% include "common/header.twig" %}
+{% extends 'Layout/layout.twig' %}
+<head>
+ <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./assets/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./assets/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+    <script src="./assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Tabs - Default functionality</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/reservation.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/tableMenu.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/dash.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/restaurant.css">
+
+</head>
+{% block body %}
  
-  {% for order in edit.orders %}	 
+  {% for order in result %}	 
 
 
-		<form method="POST" action="/update/{{order.table_order_id}}">
+		<form method="POST" action="/update/{{order.id}}">
+		<div class="row">
+		<div class="col-2">
 		<label for="table_number">Table №</label>
-		<input type="text" value="{{ order.table_number }}" name="table_number"></br>
+		<input type="text" value="{{ order.table }}" class="form-control" placeholder=".table number" name="table_id"></br>
 		{{flash['error_table']}}
+		</div>
 		<label for="sub_cat	egory">Sub Category</label>
-		<input type="text" name="subcategory" value="{{ order.name }}"/>
+		<select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="subcategory" value="{{ order.product_name }}">
+		{% for product in products %}
+		<option value="{{product.id}}">{{product.name}}</option>
+		{% endfor %}
+		</select>
 		{{flash['error_subcategory']}}
 		</br>
+
+		<div class="col-2">
 		<label for="quantity">Quantity</label>
-		<input type="text"  name="quantity" value="{{ order.quantity }}">
+		<input type="text"  name="quantity" class="form-control"  value="{{ order.quantity }}">
 		{{flash['error_quantity']}}
+		</div>
+		
+
 		</br>
-		<input type="submit" name="Save" value="save">
+		<input class="btn btn-primary" type="submit" value="Submit">
 		{% endfor %}
+		</div>
 		</form>
-    
 
-
-{% include "common/footer.twig" %}
+{% endblock %}
 

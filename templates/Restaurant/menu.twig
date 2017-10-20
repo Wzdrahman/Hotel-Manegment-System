@@ -1,0 +1,101 @@
+{% extends 'Layout/layout.twig' %}
+
+{% block body %}
+
+<div class="row">
+	<div class="col-lg-8 box" >
+			<!-- Tab menu -->
+		  <ul class="nav nav-tabs" role="tablist">
+
+		  	{% for category in categories %}
+		    <li role="presentation" {% if categories|first.category_tag == category.category_tag %} class="active" {% endif %}>
+		    	<a href="#{{category.category_tag}}" aria-controls="{{category.category_tag}}" role="tab" data-toggle="tab">{{category.category_name}}</a>
+		    </li>
+		    {% endfor %}
+
+		  </ul>
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+
+		  {% for tag, subCategory in subCategories %}
+		  	
+		    <div role="tabpanel" class="tab-pane {% if subCategories|keys|first == tag %}active{% endif %}" id="{{ tag }}">
+		    	<!-- Loop through all elements which are hot drinks -->
+		    	{% for item in subCategory %}
+
+				<div class="col-sm-6 col-md-4 menu-item">
+				    <div class="thumbnail menu-commodities">
+				      <img class="img-menu" src="./assets/img/{{item.photo}}" alt="...">
+				      <div class="caption">
+				      <input type="submit" value="buy$"  data-price="{{item.price}}" data-name="{{item.name}}" data-category_id="{{item.category_id}}" class="btn btn-primary buy">
+				      	<div class="item">
+				      	<h3 class="z">{{item.name}}</h3>
+				        <h4>${{item.price}}</h4>
+				        <p class="more" >{{item.description}}</p>
+				        </div>
+				        
+				      </div>
+				    </div>
+			  	</div>	
+	
+					
+				{% endfor %}
+		    </div>
+
+		    {% endfor %}
+		  </div>
+	</div>
+	
+	<div class="col-lg-4 box">
+		<h1>Bill system</h1>
+		<div class="p"></div>
+
+		<table class="table table-condensed">
+  <thead>
+    <tr>
+      <td>number</td>
+      <td>Name</td>
+      <td>Price</td>
+      <td>Quantity</td>
+      <td>Delete</td>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan=7>Total Price:
+        <span id="totalPrice"></span>
+      </td>
+    </tr>  
+  </tfoot>
+</table>
+		<div id="receipts">
+			<div class="popup" onclick="popUpreceipt()">
+		    	<input type="button" class="btn-success" name="Button" value="receipt">
+					 <div class="popuptext" id="receiptPopup">
+						
+						<table class="table table-condensed">
+  							<tbody>
+  								
+  							</tbody>
+  							 <tfoot>
+							    <tr>
+							      <td colspan=7>Total Price:
+							        <span id="totalPrice"></span>
+							      </td>
+							    </tr>  
+							 </tfoot>
+						</table>	
+
+					 </div>
+
+		    </div>
+		</div>
+</div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,344 @@
+ERROR - 2017-07-16 12:03:25 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 12:18:42 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 12:18:45 - ErrorException: Problem preparing query (UPDATE orders SET `table_number` = ?, `subcategory` = ?, `quantity` = ?, `Save` = ? WHERE   table_order_id = ? ) Unknown column 'table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(167): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(117): App\Models\RestaurantModel\RestaurantModel->updateRedocrd('52', Array)
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->updateData('52')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('updateData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-16 12:22:44 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 12:22:46 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 12:22:52 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 12:23:02 - ErrorException: Problem preparing query (UPDATE orders SET `table_number` = ?, `subcategory` = ?, `quantity` = ?, `Save` = ? WHERE   table_order_id = ? ) Unknown column 'table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(167): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(117): App\Models\RestaurantModel\RestaurantModel->updateRedocrd('49', Array)
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->updateData('49')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('updateData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-16 12:23:23 - ErrorException: Problem preparing query (UPDATE orders SET `table_number` = ?, `subcategory` = ?, `quantity` = ?, `Save` = ? WHERE   table_order_id = ? ) Unknown column 'table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(167): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(117): App\Models\RestaurantModel\RestaurantModel->updateRedocrd('49', Array)
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->updateData('49')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('updateData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-16 12:23:25 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(124): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 12:23:29 - ErrorException: Problem preparing query (UPDATE orders SET `table_number` = ?, `subcategory` = ?, `quantity` = ?, `Save` = ? WHERE   table_order_id = ? ) Unknown column 'table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(167): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(117): App\Models\RestaurantModel\RestaurantModel->updateRedocrd('49', Array)
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->updateData('49')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('updateData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-16 12:23:35 - ErrorException: Problem preparing query (UPDATE orders SET `table_number` = ?, `subcategory` = ?, `quantity` = ?, `Save` = ? WHERE   table_order_id = ? ) Unknown column 'table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(167): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(117): App\Models\RestaurantModel\RestaurantModel->updateRedocrd('49', Array)
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->updateData('49')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('updateData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-16 12:25:26 - ErrorException: Problem preparing query (UPDATE orders SET `table_number` = ?, `subcategory` = ?, `quantity` = ?, `Save` = ? WHERE   table_order_id = ? ) Unknown column 'table_number' in 'field list' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(350): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL, Array)
+#4 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(168): Yee\Libraries\Database\MysqliDB->update('orders', Array)
+#5 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(117): App\Models\RestaurantModel\RestaurantModel->updateRedocrd('49', Array)
+#6 [internal function]: App\Controllers\RestaurantController\RestaurantController->updateData('49')
+#7 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#8 [internal function]: Yee\Managers\Controller\Controller::__callStatic('updateData', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#15 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#16 {main}
+ERROR - 2017-07-16 12:40:57 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(133): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 13:04:55 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(133): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 13:04:55 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(133): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-07-16 13:28:10 - ErrorException: Problem preparing query (
+		 SELECT product.name, product.price,orders.table_order_id, orders.quantity, restaurant_tables.table_number
+		 FROM restaurant_tables
+		 JOIN table_order ON restaurant_tables.table_number = table_order.table_id
+	   	 JOIN orders ON table_order.id = orders.table_order_id
+	 	 JOIN product on product.id = orders.product_id WHERE orders.table_order_id =myscripts.js) Unknown column 'myscripts.js' in 'where clause' in C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\xampp\\htdocs...', 909, Array)
+#1 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Libraries\Database\MysqliDB.php(214): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\xampp\htdocs\kinguin\App\Models\RestaurantModel\RestaurantModel.php(133): Yee\Libraries\Database\MysqliDB->rawQuery('\r\n\t\t SELECT pro...')
+#4 C:\xampp\htdocs\kinguin\App\Controllers\RestaurantController\RestaurantController.php(86): App\Models\RestaurantModel\RestaurantModel->EditRow('myscripts.js')
+#5 [internal function]: App\Controllers\RestaurantController\RestaurantController->Edit('myscripts.js')
+#6 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(23): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('Edit', Array)
+#8 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Route.php(468): call_user_func_array('\\App\\Controller...', Array)
+#9 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1374): Yee\Route->dispatch()
+#10 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#11 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#12 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#13 C:\xampp\htdocs\kinguin\vendor\yeephp\yeephp\Yee\Yee.php(1282): Yee\Middleware\PrettyExceptions->call()
+#14 C:\xampp\htdocs\kinguin\public\index.php(25): Yee\Yee->execute()
+#15 {main}

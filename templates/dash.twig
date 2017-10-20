@@ -1,24 +1,149 @@
-{% include "common/header.twig" %}
-
-<div class="menu">
-	<div class="home">
-		<a href="">
-		<img src="./assets/img/home.png">
-		HOME
+{% include "Layout/layout.twig" %}
+<!-- <div class="content">	
+<div class="menu"> -->
+<!-- 	<div class="home menu-elements">
+		<a href="reservation">
+		<img src="./assets/img/reservation.png">
 		</a>
 	</div>
-	<div class="tickets">
+	<div class="tickets menu-elements">
 		<a href="#">
-		<i class="fa fa-plane fa-3x" aria-hidden="true"></i>TICKETS
+		<img src="./assets/img/settings7.jpg">
 		</a>
 	</div>
-	<div class="services"><i class="fa fa-camera-retro fa-2x"></i>SERVICES</div>
-	<div class="reservations">RESERVATIONS</div>
-	<a href="./Restaurant/Restaurant"><div class="restaurant">RESTAURANT</div></a>
-	<div class="contact">USERS</div>
-	<div class="logout">LOGOUT</div>
-	<a href="#"><i class="fa fa-fighter-jet" aria-hidden="true"></i>
-</a>
+	<div class="services menu-elements">
+	<a href="/restaurant">
+	<img src="./assets/img/restaurant.png">
+	</a>
+	</div>
+	<div class="reservations menu-elements">
+	<a href="reservation">
+	<img src="./assets/img/logout5.jpg">
+	</a>
+	</div> -->
+<!-- 	<div class="restaurant menu-elements">
+	<a href="restaurant">
+	<img src="./assets/img/.png">
+	</a>
+	</div>
+	<div class="contact menu-elements">
+		<a href="#">
+		<img src="./assets/img/contact.png">
+		</a>
+	</div> -->
+	<!-- <a href="#"><i class="fa fa-fighter-jet" aria-hidden="true"></i>
+</a> -->
+<!-- </div>
+</div> -->
+{% block body %}
+<!-- <div  class="panel panel-default">
+  <div background-color="#4286f4" class="panel-heading">Users</div>
+  <table class="table">
+    <tr>
+    	<th>Email</th>
+    	<th>First Name</th>
+    	<th>Last Name</th>
+    	<th>Role</th>
+    	<th>Password</th>
+    	<th>Action</th>
+    </tr>
+
+    
+   
+    <tr>
+    	<td><span>alex@dir.com</span></td>
+    	<td><span>Alex</span><br></td>
+    	<td><span> Ivanov</span></td>
+    	<td><span>Server</span><br></td>
+    	<td><span>b1537cc58a6a5307a4011df22c59b566</span></td>
+    	<td>
+    		<a href="/restaurantdel/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/delete.png "></a>
+    		<a href="/restaurantedit/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/edit.png"></a>
+    	</td>
+    </tr>
+     <tr>
+     	<td><span>Petar@gmail.com</span></td>
+    	<td><span>Petar</span><br></td>
+    	<td><span>Rakov</span></td>
+    	<td><span>Receptionist</span><br></td>
+    	<td><span>17be4252e9f8fa018dc1b5bcafb06db</span></td>
+    	<td>
+    		<a href="/restaurantdel/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/delete.png "></a>
+    		<a href="/restaurantedit/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/edit.png"></a>
+    	</td>
+    </tr>
+     <tr>
+        <td><span>iva21@dg.com</span></td>
+    	<td><span>Iva</span><br></td>
+    	<td><span>Iva Petrova</span></td>
+    	<td><span>Server</span><br></td>
+    	<td><span>55a4f507b9b857bfeb08a2cf896df478</span></td>
+    	<td>
+    		<a href="/restaurantdel/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/delete.png "></a>
+    		<a href="/restaurantedit/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/edit.png"></a>
+    	</td>
+    </tr>
+     <tr>
+     <td><span>radoslava@abd.com</span></td>
+    	<td><span>Radoslava</span><br></td>
+    	<td><span>Doncheva</span></td>
+    	<td><span>Receptionist</span><br></td>
+    	<td><span>41cc91ab1c056e8ef7f17f95c0bc1bab</span></td>
+    	<td>
+    		<a href="/restaurantdel/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/delete.png "></a>
+    		<a href="/restaurantedit/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/edit.png"></a>
+    	</td>
+    </tr>
+     <tr>
+     <td><span>maria@dir.com</span></td>
+    	<td><span>Maria</span><br></td>
+    	<td><span>Kirilova</span></td>
+    	<td><span>Server</span><br></td>
+    	<td><span>08bee0b4b45dd46ee2b9c169e5ae1ad8</span></td>
+    	<td>
+    		<a href="/restaurantdel/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/delete.png "></a>
+    		<a href="/restaurantedit/{{order.id}}"><img  width="25px" height="25px" src="./assets/img/edit.png"></a>
+    	</td>
+    </tr>
+  
+    <tr><td></td><td></td><td></td><td>{{ order.quantity * order.price+order.quantity * order.price }}$</td></tr>	 -->
+     <!-- </table> -->  
+			
+<!-- </div>	
+<div class="w3-bar">
+  <a href="#" class="w3-button"><</a>
+  <a border="1px solid black" href="#" class="w3-button">1</a>
+  <a border="1px solid black" href="#" class="w3-button">2</a>
+  <a href="#" class="w3-button">></a>
+
+</div> -->
+<!-- <div id="header">
+	<div class="logo"><a>Hotel<span></span></a></div>
 </div>
 
-{% include "common/footer.twig" %}
+<a class="mobile" href="#">Hotel Manegment System</a>
+
+<div id="container">
+	<div class="sidebar">
+		<ul id="nav">
+			<li><a >Dashboard</a></li>
+			<li><img src="/assets/img/screen.jpg"></li>
+			<li><a href="/reservation">Reservation</a></li>
+			<li><a href="/restaurant">restaurant</a></li>
+			<li><a href="#">logout</a></li>
+			
+
+		</ul>
+	</div>
+	<div class="content">
+		<h1>Dashboard</h1>
+	<div id="box">
+		<div class="box-top"></div>	
+		<div class="box-panel">
+			
+		</div>
+	</div>
+	</div>
+</div> -->
+
+{% endblock %}

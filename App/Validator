@@ -1,0 +1,25 @@
+<?php
+
+class Validator {
+	public static function validate(rules, data){
+		foreach ($data as $key => $value) {
+			$stringOfRules = $rules[$key];
+			$arrayOfRules = explode('|', $stringOfRules);
+
+			foreach ($arrayOfRules as $rule) {
+				switch($rule){
+					case 'string':
+						$success = Validator::notNull($data[$key]);
+				}
+
+				if(!$success){
+					break;
+				}
+			}
+		}
+	}
+
+	public static function notNull($data){
+		return !is_null($data);
+	}
+}

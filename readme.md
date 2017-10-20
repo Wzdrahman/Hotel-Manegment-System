@@ -27,23 +27,29 @@
 	-	Tasks.Ticket can be assign to some user.
 			todo / doing / done
 3.	Model our data
-	-User
-		id	- int/primary key/auto increment
-		name	-varchar 50 
-		password	-varchar/md5hash
-		email	-varchar 50
-	-Ticket
-		id	 -int/primary key/auto increment
-		title 	-varchar 50 
-		description	 -varchar 200 
-		priority_id	-int
-		startDate	-date
-		endDate	 	-date
-		userAssing	-int
-	-Priority
-		id 	-int/primary key/auto increment
-		name -varchar 50 
-		value -int 
+
+	-tables
+		-id
+		-table_nuber
+
+	-table_order
+		-id
+		-table_id
+
+	-orders
+		-id
+		-table_order_id
+		-quantity
+		-product_id	
+		id table  product_name product_price quantity  
+		1   5       kartofi      5lv           2
+		
+	-product
+		-id
+		-price
+		-name
+	
+
 4.  Crowling aroun the pages we need for our application
 	-login@index
 	-registration@index

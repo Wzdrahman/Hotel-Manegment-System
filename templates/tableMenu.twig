@@ -1,0 +1,27 @@
+
+	
+<div class="table-render">
+{% for item in subCategory %}
+	
+	<div class="item-menu">
+		<img class="coffee-img" src="./assets/img/coffee.jpg" value="coffee">
+		<div class="itemssfe">{{ item.name }}{{ item.price}}$</div>
+		{{ item.description }}
+	</div>
+
+	
+{% endfor %}
+</div>
+<!-- <div class="p">1</div> -->
+
+<script>
+$(document).ready(function(){
+	$(".item").click(function(){
+        //$(this).appendTo(".p");
+
+        bill.push($(this));
+        refreshBill();
+    });
+});
+</script>
+

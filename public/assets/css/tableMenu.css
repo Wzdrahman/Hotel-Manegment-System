@@ -1,0 +1,43 @@
+.wrap-menu {
+	background-color:#80a9ed;
+   
+}
+
+.wrap-table {
+	background-color: #6793db;
+	
+}
+ .row {
+ 	width: 100%;
+ }
+
+
+div.box {
+   box-sizing: border-box;
+    float: left;
+}
+
+img.img-menu {
+	width: 100px;
+	height: 100px;
+}
+
+.menu-commodities {
+	width: 260px;
+	height: 290px;
+}
+
+.description {
+	font-size: 15px;	
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+#receipts {
+	display: none;
+}

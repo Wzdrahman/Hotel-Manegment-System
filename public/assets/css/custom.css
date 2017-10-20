@@ -1,9 +1,33 @@
-.panel {
-	float: right;
-	width: 60%;
-	margin-right: 30px;
-	display: inline-block;
-	margin-top: -189px;
+
+
+.menu-bar {
+    width: 850px;
+
+}
+
+.content {
+    background-color: rgb(73,81,162);
+    height: 650px;
+}
+.menu, .home, .tickets, .services, .reservations, .restaurant, .user, .contact, .logout   {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.menu { 
+margin-left: 8%;
+}
+
+.menu img {
+    height: 118px;
+}
+
+.menu-elements {  
+    margin-left: -4px;
+    background-color: rgb(76,114,187);
+}
 }
 
 .forma {
@@ -11,6 +35,41 @@
 }
 
 .panel input {
-	margin-left: 10px;
+	margin-left: 50px;
 }
 
+
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 560px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -225%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .show {
+    visibility: visible;
+    position: relative;
+}
+ 
